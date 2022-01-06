@@ -11,7 +11,7 @@ import java.util.List;
 
 @Repository
 public interface UpdatePwdAccountRepository extends JpaRepository<AccountEntity,Integer> {
-@Query (value = "update account_table b set b.user_pwd=?1 where b.id=?2",nativeQuery = true)
+@Query (value = "update account_table b set b.user_pwd=?1 where b.user_id=?2",nativeQuery = true)
 @Modifying
-    public void updateOne(String user_pwd,int id);
+    public void updateOne(String user_pwd,String user_id);
 }
