@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping(value="/userAll" ,produces = MediaType.APPLICATION_JSON_VALUE)
+@CrossOrigin
+@RequestMapping(value="/userall" ,produces = MediaType.APPLICATION_JSON_VALUE)
 public class SelectAccountController {
     @Autowired
     AccountRepository accountRepository;

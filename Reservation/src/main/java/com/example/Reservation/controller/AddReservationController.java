@@ -16,7 +16,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping(value="/new_Reservation", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value="/new_reservation", produces = MediaType.APPLICATION_JSON_VALUE)
 public class AddReservationController {
     @Autowired
     ReservationRepository reservationRepository;

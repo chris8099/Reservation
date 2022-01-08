@@ -13,7 +13,8 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping(value="/new_account", produces = MediaType.APPLICATION_JSON_VALUE)
+@CrossOrigin
+@RequestMapping(value="/addacount", produces = MediaType.APPLICATION_JSON_VALUE)
 
 public class AddAccountController {
 
