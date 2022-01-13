@@ -13,8 +13,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import SignUp from './Add';
-import Index from './App'
+import SignUp from './Adduser';
+import Index from '../App'
 
 function Copyright(props) {
   return (
@@ -96,13 +96,13 @@ export default function SignIn() {
 
             <Grid container>
               <Grid item xs>
-                <Link href="/App" variant="body2">
+                <Link href="#" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>
               <Grid item >
-                <Link href="/Add" variant="body2" >
-                  {"Don't have an account? Sign Up"}
+                <Link href="/Adduser" variant="body2" >
+                  Don't have an account? Sign Up
                 </Link>
               </Grid>
             </Grid>

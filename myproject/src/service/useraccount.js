@@ -4,7 +4,7 @@ const getUser =()=> {
         method: 'GET',
         headers:{'Content-Type': 'application/json'}
     };
-    return fetch(`http://localhost:8080/userall`, requestOptions)
+    return fetch('https://work-java-1.herokuapp.com/userall', requestOptions)
         .then(handleResponse)
         .then((todos) => {
             return todos;
@@ -20,7 +20,7 @@ const createTodos =(data)=> {
     };
     
         
-    return fetch(`http://localhost:8080/addacount`, requestOptions)
+    return fetch('https://work-java-1.herokuapp.com/addacount', requestOptions)
         .then(handleResponse )
         .then((res) => { return res} 
         );
